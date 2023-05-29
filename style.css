@@ -270,6 +270,7 @@ input[type="checkbox"]:checked ~ .label-checkbox::after {
 .content-message button {
   background-color: var(--Red);
   color: var(--Very-Dark-Grey);
+  border: none;
   width: 100%;
   padding: 10px;
 }
