@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="cssrest.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="starter-code/assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Password generator app</title>
+  </head>
+  <body>
+    <section>
+      <h1>Passowrd Generator</h1>
+      <div class="password-result">
+        <span id="Passowrd">PTx1f5DaFX</span>
+        <div class="div-copy">
+          <span id="copied">COPIED</span>
+          <button id="btn-copy"></button>
+        </div>
+      </div>
+      <div class="password-generator">
+        <div class="char-length-div">
+          <span id="char-length-title-span">charcter length</span>
+          <span id="length-span">0</span>
+        </div>
+
+        <input type="range" id="range" min="0" max="20" value="0" />
+
+        <ul class="list-checkbox">
+          <li class="item-checkbox">
+            <div class="check-div">
+              <input type="checkbox" id="uppercase" />
+              <label for="uppercase" class="label-checkbox"></label>
+            </div>
+
+            <span>Include Uppercase Letters</span>
+          </li>
+          <li class="item-checkbox">
+            <div class="check-div">
+              <input type="checkbox" id="lowercase" />
+              <label for="lowercase" class="label-checkbox"></label>
+            </div>
+
+            <span>Include Lowercase Letters</span>
+          </li>
+
+          <li class="item-checkbox">
+            <div class="check-div">
+              <input type="checkbox" id="numbers" />
+              <label for="numbers" class="label-checkbox"></label>
+            </div>
+
+            <span>Include Numbers</span>
+          </li>
+
+          <li class="item-checkbox">
+            <div class="check-div">
+              <input type="checkbox" id="symbols" />
+              <label for="symbols" class="label-checkbox"></label>
+            </div>
+
+            <span>Include Symbols</span>
+          </li>
+        </ul>
+
+        <div class="strength-password">
+          <span id="strength-span">STRENGTH</span>
+
+          <div class="type-strength-par">
+            <span id="type-strength">MEDIUM</span>
+            <div class="type-strength-seq">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+        <button id="btn-generate" onclick="generate()">
+          <span id="span-generate">Generate</span>
+          <div class="div-icon-arrow"></div>
+        </button>
+      </div>
+    </section>
+    <div class="message">
+      <div class="content-message">
+        <span id="message-content">Pleas </span>
+        <button onclick="disapper()">Ok</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
